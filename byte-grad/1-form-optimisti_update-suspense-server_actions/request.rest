@@ -1,0 +1,11 @@
+@url = http://localhost:3000
+
+### get users
+GET {{url}}/api/users
+
+### add user
+POST {{url}}/api/users
+
+{
+  "name": "levi"
+}
