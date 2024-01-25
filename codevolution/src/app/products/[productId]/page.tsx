@@ -13,7 +13,7 @@ export const generateMetadata = async ({
     }, 100)
   })
 
-  return { title: title as string }
+  return { title: { absolute: title as string } }
 }
 
 const Product = ({ params }: ProductProps) => {
