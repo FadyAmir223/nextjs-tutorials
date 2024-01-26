@@ -1,968 +1,968 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
- 
- 
- 
- 
- 
- 
- 
- 
-  
-      ],
-      },
-    */
-    /*
-    //...
-    </>
-    </>
-    <>
-    <>
-    {
-    }
-    })
-    },
-    },
-  )
-  )
-  )
-  )
-  // ...
-  //...
-  </>
-  <>
-  ],
-  }
-  }
-  }
-  })
-  }) */
-  },
-  },
-)
-) {
-) {
-) {
->
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-```
-}
-}
-}
-}
-}
-}
-}
-}
-}
-}
-}
-}
-}
-}
-}
-}
-}
-}
-}
-}
-}
-}
-}
-}
-}
-}
-}
-}
-}
-}
-}
-}
-})
-})
-})
-})
-- %5Fpublic
-├── %5Fpublic
-    '/about',
-    absolute: ''                // ignores template (used in child)
-      'Access-Control-Allow-Headers': 'Content-Type, Authorization',
-      'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
-      'Access-Control-Allow-Origin': '*',
-### access route segment
-// @/actions/submitForm.ts
-acts like <Outliet /> wraps children with eg. <header /> & <footer /> <br/>
-    addOptimisticUser({ id: Math.random(), name: formData.get('name') })
-  alt=''
-└── api
-├── api
-  - API
-// API
-      * - api (API routes)
-- API route handlers
-app
-app/
-/app/docs/[[...slug]]
-app/f1
-// @/app/page.tsx
-/app/products/[productId]
-    - archive
-    │   ├── archive
-async function GET(request: Request) {
-async function serverActon(userId, formData) {
-async function ServerComponent() {
-async function submitForm(formData) {
-- auto compress image
-  auto revalidate, for data that changes infrequently
-    await fetch('http://localhost:3000/api/users', {
+# setup
 ```bash
-becomse client component when 'use client' or imported in client component
-      body: JSON.stringify({ name }),
-break down the page's HTML into smaller chunks and send chunks from server to client <br/>
-- <button />
-      <button onClick={() => reset()}>try again</button>
-      <button>submit</button>
-by default all components in /app are server components
-by default everything in /app is server components
-  cache: 'no-store',
-##### cache requests of third party libs
-cache tag `revalidateTag`
-## cahce
-- can be called in Client Components during the rendering process
-can be done in 'server actions' or 'route handlers'
-can be run programatically for [queries]
-  can use a tag-based or path-based approach to revalidate groups of data at once.
-#### client
-#### client component
-client side cache is 5 minute <br/>
-- client side rendering         (CSR)
-  color: z.enum(['red', 'green', 'blue'])
-common usage: modals
-# concepts
-#### config
-  const addUser = async (formData: FormData) => {
-const App = async () => (
-  const clientAction = (formData: FormData) => {
-const Component = async () => {
-const Component = () => <Link href='/route' replace>route</Link>
-const Component = ({ params: { slug: string[] } }) => {}
-  const cookieList = cookies()
-  const data = await res.json()
-  const data = await res.json();
-  const data = await response.json()
-  const [deletedUser] = data.users.splice(index, 1)
-const Error = ({ error, reset }: { error: Error, reset: () => void }) => {
-  const filteredUsers = data.users.filter((user) => user.name.includes(query))
-const function ClientComponent() {
-const function ServerComponent() {
-const getData = cache(async () => {
-const handleClick = () => {
-  const handleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
-  const headerList = headers() // read only
-  const headers = new Headers(request.headers)
-  const id = +context.params.id
-  const id = +context.params.id
-  const id = +context.params.id
-  const index = data.users.findIndex((user) => id === user.id)
-  const index = data.users.findIndex((user) => id === user.id)
-const initialState = { message: '' }
-const isActive = pathName.startsWith(url)
-const ListProducts = () => {
-  const modifiedUser = { id, name }
-  const { name } = await request.json()
-  const { name } = await request.json()
-    const name = formData.get('name')
-  const newUser = { id: data.users.length + 1, name }
-  const [optimisticUsers, addOptimisticUser] = useOptimistic(
-const pathName = usePathname()
-  const { pending } = useFormStatus()
-const Product = ({ params: { productId: string } }) => {
-  const { products } = await response.json()
-  const query = searchParams.get('q') || ''
-  const res = await axios.get(url);
-  const res = await fetch(url, { next: { revalidate: 60 }})
-  const res = await fetch(url, { next: { tags: ['collection'] } })
-  const response = await fetch(`/api/product/${params.id}`)
-  const response = await fetch('/api/products')
-  const response = NextResponse.next()
-  const respopnse = await fetch('/api/products')
-const router = useRouter()
-  const searchParamsObject = Object.fromEntries(searchParams)
-  const { searchParams } = request.nextUrl
-  const searchParams = useSearchParams()
-  const serverActionWithId = serverAction.bind(null, userId) // js method
-  const someData = await getData();
-  const [state, formAction] = useFormState(createUser, initialState)
-  const theme = cookieList.get('theme')
-  const { title } = await response.json()
-  const token = headerList.get('Authorization')
-  const user = data.users.filter((user) => user.id === id)
-const xSchema = z.object({
-        'Content-Type': 'application/json',
-  context: { params: { id: string } },
-  context: { params: { id: string } },
-  context: { params: { id: string } },
-  cookieList.set('theme', 'dark', { httpOnly: true, secure: true })
-#### CORS
-- create new instance
-- dashboard
-- dashboard
-└── dashboard
-    '/dashboard/:path', // dashboard/a
-    '/dashboard/:path*', // dashboard/a/b/c
-data ca be fetched on client or server
-#### data caching
-data can be fetched at build time or request time
-```# Data Fetching
-data returned from fetch() is cached in 'data cache' on server <br />
-  data.users[index] = modifiedUser
-  data.users.push(newUser)
-    default: '',                // no title provided
-        ├── default.tsx
-    - default.tsx
-    ├── default.tsx
-  - default.tsx
+npx my-app create-next-app@latest --ts --tailwind --eslint --src-dir --app --import-alias '@/*'
+```
+# Routing
+
+## special
+### files
+- page.tsx
+- layout.tsx
+- template.tsx
+- not-found.tsx
+- loading.tsx
+- error.tsx
+- global-error.tsx
 - default.tsx
-  description: ''
-  description: ''
+
+- route.ts
+- middleware.ts
+
+- favicon.ico
+- robots.txt
+
+```tsx
+<Layout>
+  <Template>
+    <ErrorBoundary fallback={<Error />}>
+      <Suspense fallback={<Loading/>}>
+        <ErrorBoundary fallback={<NotFound />}>
+          <Page />
+        </ErrorBoundary>
+      </Suspense>
+    </ErrorBoundary>
+  </Template>
+</Layout>
+```
+
+
+### folders
+- _private
+- %5Fpublic
+- (logical)
+- [...slug]
+- [[...slug]]
+- @feature
 - (.)dir
 - (..)dir
 - (...)dir
-- DOM elements re-created
-// dynamic
-- dynamic functions  cookies() & headers()
-each fetch request will be revalidated independently
-      e.currentTarget.form?.requestSubmit()
-- effects re-synchronized
-  email: z.string().email(),
-  - environment variables
-## environment variables
-- .env.local (private)
-- .env (public)
-      e.preventDefault()
-## error
-        </ErrorBoundary>
-    </ErrorBoundary>
-    <ErrorBoundary fallback={<Error />}>
-        <ErrorBoundary fallback={<NotFound />}>
-<!-- { error: Error, reset: () => void }   'use client' for reset() -->
-### error message
-- error.tsx
-│       ├── error.tsx
-error.tsx don't wrap layout and template that global-error.tsx wrap the entire app
-- event handlers eg. onClick, onChange
-export async function Component() {
-export async function createUser(prevState: any, formData: FormData) {
-export async function DELETE(
-export async function GET(
-export async function GET(request: NextRequest) {
-export async function PATCH(
-export async function POST(request: NextRequest) {
-export async function submitForm(formData) {}
-export const config = {
-export const dynamic = 'auto'
-export const dynamic = 'force-dynamic' // default 'auto'
-export const dynamicParams = true
-export const fetchCache = 'auto'
-export const generateMetadata = async ({ params }: ProductProps): Promise<Metadata> => {
-export const generateMetadata = ({ params }: ComponentProps): Metadata => ({
-export const metadata: Metadata = {
-export const metadata: Metadata = {
-export const preferredRegion = 'auto'
-export const revalidate = 3600
-export const revalidate = 3600;
-export const revalidate = 60
-export const revalidate = false
-export const runtime = 'nodejs'
-export const updateUsername = async (username: string) {
-export default async function Page() {
-export default async function serverAction() {
-export default Form
-export default function ServerComponent({ userId }) {
-export function Component({ searchParams }:
-export function Entry() {
-export function matching http verb (GET, POST...)
-export function middleware(request: NextRequest) {
-export function Signup() {
-#### extended fetch
-        └── (...f1)
-│   │   └── (...f1)
-f1
-f1
-f1
-└── (.)f2
-└── f2
-├── (.)f2
-├── f2
-├── f2
-├── f2
-    └── f3
-│   ├── f3
-│   └── (..f4)
-│   └── (..f4)
-└── f4
-└── f4
-- favicon.ico
+
+
+## routing
+```
+app/
 ├── favicon.ico
-      * - favicon.ico (favicon file)
-- @feature
-  - fetch in component directly close to the data source
-### fetch on server
-fetch requests that use the POST method are automatically cached. Unless it's inside Route Handler that uses the POST method.
-fetch(url, {
-fetch(url, { cache: 'force-cache' /* default */})
-fetch(url, { next: { revalidate: 3600 }})
-### files
-  - file system
-### folders
-(...) for any nested level to root '/any'
-for dynamically rendered routes <br/>
-│   ├── forgot-password
-    </form>
-- <form />
-    <form action={addUser}>
-      <form action={clientAction}></form>
-  - form data
-(.) for neighbour routes  f1 -> f2 and (.)f2
-for simple form like login <br />
-for statically rendered routes <br/>
-(..) for up level routes  f1/f2/../f4
-function Component() {
-function Component({ users }) {
-function Form() {
-GET methods with Response object are cached <br/>
-## global error
-- global-error.tsx
-      <h1>error: {error.message}</h1>
-    <h1>products</h1>
-      headers: {
-    headers: {
-    headers: { 'Content-Type': 'application/json' },
-  headers.set('header-name', 'value')
-  height={}
-│   └── helpers.ts
-    └── [id]
-  id: z.coerce.number().int().positive(),
-    if (e.ctrlKey && e.key === 'Enter') {
-  if (id > data.users.length) redirect('/api/users')
-  if (isAuthenticated)
-  if (request.cookies.has('cookieName'))
-  if (request.nextUrl.pathname.startsWith('/dashboard'))
-  if (!response.ok) throw new Error('failed to load data')
-if (!user.name) return notFound()
-If you have multiple fetch requests with different revalidation frequency <br/>
-      * ignore pre-fetches
-## image
-<Image
-- image slider
-import { addUser } from '@/actions/adduser' 
-import { cache } from 'react'
-import { createUser } from '@/app/actions'
-import { headers, cookies } from 'next/headers'
-import Image from 'next/image'
-import { isAuthenticated } from '@lib/auth'
-import Link from 'next/link'
-import { Metadata } from 'next'
-import { notFound } from 'next/navigation'
-import { permanentRedirect } from 'next/navigation'
-import { redirect } from 'next/navigation'
-import { revalidatePath } from 'next/cache'
-import { revalidatePath } from 'next/cache'
-import { revalidateTag } from 'next/cache'
-import { revalidateTag } from 'next/cache'
-import { submitForm } from '@/actions/submitForm'
-import { type NextRequest, NextResponse } from 'next/server'
-import { type NextRequest, NextResponse } from 'next/server'
-import { useFormState } from 'react-dom'
-import { useFormStatus } from 'react-dom'
-import { useOptimistic } from 'react'
-import { usePathname } from 'next/navigation'
-import { useRouter } from 'next/navigation'
-import { useSearchParams } from 'next/navigation'
-import { z } from 'zod'
-- incremental site regeneration (ISR)
-- in layout.tsx | page.tsx
-- <input type='image' />
-- <input type='submit' />
-      <input type='text' name='name' id='name' placeholder='name' />
-in routing inside notifications /dashboard/archive <br/>
-instead of importing components from its folder <br/>
-### intercepting routes
-intercept requests to specific routes <br/>
-it becomes client compoenent when 'use client' or import from client component
-it is about import tree not render tree
-  - keep large dependencies on the server
-## layout
-</Layout>
-<Layout>
-    ├── layout.tsx
-  - layout.tsx
-  - layout.tsx
-- layout.tsx
-│       ├── layout.tsx
-│       ├── layout.tsx
+├── robots.txt
+├── page.tsx
 ├── layout.tsx
-libraries still use with next.js:
-libraries stop use with next.js:
-like layout but on navigation:
-      <ListProducts />
-- loading.tsx
 ├── loading.tsx
-  - localStorage
-- (logical)
-├── (logical-group)
-│       ├── login
-- login form
-  manually revalidate after eg. form submission <br/>
-      * Match all request paths except for the ones starting with:
-  matcher: [
-means updating the cache, ways:
-## metadata
-      method: 'POST',
-## methods
-#### middleware
-- middleware.ts
 ├── middleware.ts
-      missing: [
-    - mongoose
-- more deep overwrites
-  MY_SECRET (kept on server - no client components)
-  name: z.string().min(1, 'message').max(10).optional(),
-## navigation
-  next: {
-      * - _next/image (image optimization files)
-  NEXT_PUBLIC_API_URL (shipped to the browser)
-      * - _next/static (static files)
-#### not cached:
-# notes
-# notes
-## not-found
-- not-found.tsx
+├── api
+│   └── user
+│       └── route.ts
+├── route-name
+│   ├── page.tsx
+│   └── paramName
+│       ├── error.tsx
+│       ├── layout.tsx
+│       └── page.tsx
+├── route-name2
+│   ├── page.tsx
+│   └── [[...slug]]
+│       └── page.tsx
+├── _private
+│   └── helpers.ts
+├── %5Fpublic
+│   └── page.tsx
+├── (logical-group)
+│   ├── forgot-password
+│   │   └── page.tsx
+│   ├── template.tsx
+│   └── (with-layout)
+│       ├── layout.tsx
+│       ├── login
+│       │   └── page.tsx
+│       └── register
+│           └── page.tsx
+└── dashboard
+    ├── layout.tsx
+    ├── default.tsx
+    ├── page.tsx
     ├── @notifications
-  @notifications
-  @notifications
-npx my-app create-next-app@latest --ts --tailwind --eslint --src-dir --app --import-alias '@/*'
-on build all responses are cached <br/>
-- on-demand
-- onKeyDown
-on key down `ctrl + enter`
-only one message shown unlike register
-// on page
-on refresh render the original component
-### optimistic update
-        {optimisticUsers.map(user => <li>{user.name}</li>)}
-  /* or
-// or
-  ORM
-  // or  new Headers(request.headers)
-  // or  request.cookies.get()
-- other methods
-          <Page />
-        └── page.tsx
-      - page.tsx
-    - page.tsx
-    - page.tsx
-    - page.tsx
-    - page.tsx
+    │   ├── archive
     │   │   └── page.tsx
     │   └── page.tsx
-    ├── page.tsx
-  - page.tsx
-  - page.tsx
-- page.tsx
-│           └── page.tsx
-│       │   └── page.tsx
-│       └── page.tsx
-│       └── page.tsx
-│   │   └── page.tsx
-│   └── page.tsx
-│   ├── page.tsx
-│   ├── page.tsx
-├── page.tsx
-// page.tsx | layout.tsx
-### parallel routes
-│   └── paramName
-# parms
-### pass extra args
-path `revalidatePath`
-### pending state
-"permanentRedirect"
-  permanentRedirect(`/profile/${username}`)
-- prevent layout shift (CLS)
-    - prisma
-- _private
-├── _private
-problem: random - date
-process.env.MY_SECRET
-process.env.NEXT_PUBLIC_API_URL
-### programatic submission
-- properites merged
-pros:
-  - react-hook-form
-  - react-query
-  - react-router-dom
-#### reavalidate (fetch) each minues
-"redirect"
-### redirect
-redirect('/route')
-  - redux-toolkit
-│       └── register
-    request.cookies.delete('cookieName')
-  _request: NextRequest,
-  _request: NextRequest,
-  request: NextRequest,
-- Request object with GET   (eg. used searchParams)
+    └── @users
+        ├── default.tsx
+        └── page.tsx
+```
+
+
+## layout
+acts like <Outliet /> wraps children with eg. <header /> & <footer /> <br/>
+state preserved on navigtion
+
+
+## template
+like layout but on navigation:
+- create new instance
+- DOM elements re-created
 - reset state
-  response.cookies.set('anotherCookie', 'value')
-  response.headers.set('x-hello-from-middleware2', 'hello')
-response stored in data cache on server
-- responsive images
+- effects re-synchronized
+
+
+## error
+```tsx
+const Error = ({ error, reset }: { error: Error, reset: () => void }) => {
   return (
-  return (
-  return (
-  return <button type='submit' aria-disabled={pending}>submit</button>
-  return data;
-  return <div />
-  return <div />
-  return <div />
-  return <form action={formAction}></form>
-  return <form action={serverActionWithId}></form>
-  return <form action={submitForm}></form>
-  return <form action={submitForm}></form>
-  return { message: 'please enter a valid email' }
-  return new Response('Hello, Next.js!', {
-  return new Response(JSON.stringify(newUser), {
-  return NextResponse.json(newUser, { status: 200 })
-    return NextResponse.next()
-    return NextResponse.rewrite(new URL('/dashboard/user', request.url))
-  return response
-  return Response.json(deletedUser)
-  return Response.json(modifiedUser)
-  return Response.json(user)
-  return Response.json({ users: filteredUsers, token, theme })
-  return <textarea onKeyDown={handleKeyDown} />
+    <>
+      <h1>error: {error.message}</h1>
+      <button onClick={() => reset()}>try again</button>
+    </>
+  )
+}
+```
+
+## global error
+error.tsx don't wrap layout and template that global-error.tsx wrap the entire app
+
+## not-found
+runs when path not exist <br/>
+can be run programatically for [queries]
+
+<!-- { error: Error, reset: () => void }   'use client' for reset() -->
+```tsx
+import { notFound } from 'next/navigation'
+if (!user.name) return notFound()
+```
+
+# parms
+/app/products/[productId]
+
+```tsx
+import { useSearchParams } from 'next/navigation'
+
+const Product = ({ params: { productId: string } }) => {
+  const searchParams = useSearchParams()
+  const searchParamsObject = Object.fromEntries(searchParams)
+}
+```
+
+/app/docs/[[...slug]]
+```tsx
+const Component = ({ params: { slug: string[] } }) => {}
+```
+
+
+## metadata
+- in layout.tsx | page.tsx
+- properites merged
+- more deep overwrites
+
+```tsx
+import { Metadata } from 'next'
+
+// static
+export const metadata: Metadata = {
+  title: '',
+  description: ''
+}
+
+export const metadata: Metadata = {
+  title: {
+    default: '',                // no title provided
+    template: '%s | my-site',   // on child metadata.title will replace %s
+    absolute: ''                // ignores template (used in child)
+  },
+}
+
+// dynamic
+export const generateMetadata = ({ params }: ComponentProps): Metadata => ({
+  title: `${params.id}`,
+  description: ''
+})
+
+// API
+export const generateMetadata = async ({ params }: ProductProps): Promise<Metadata> => {
+  const response = await fetch(`/api/product/${params.id}`)
+  const { title } = await response.json()
   return { title }
-    revalidate: 3600,       // if 0 then no cache
-#### revalidate data
-    revalidatePath('/')
-revalidatePath('/posts') // Update cached posts
-  revalidateTag('collection')
-  revalidateTag('username') // Update all references to the username
-- robots.txt
-├── robots.txt
-## route handlers (backend)
-├── route-name
-├── route-name2
-  router.back()
-  router.forward()
+}
+```
+
+
+## streaming
+break down the page's HTML into smaller chunks and send chunks from server to client <br/>
+this enables parts of the page to be displayed sooner, without waiting for all the data to load before any UI can be rendered
+
+```tsx
+const App = async () => (
+  <>
+    <h1>products</h1>
+    <Suspense fallback={<Loading />}>
+      <ListProducts />
+    </Suspense>
+  </>
+)
+
+
+const ListProducts = () => {
+  const response = await fetch('/api/products')
+  const { products } = await response.json()
+
+  return <div />
+}
+```
+
+
+## navigation
+```tsx
+import Link from 'next/link'
+const Component = () => <Link href='/route' replace>route</Link>
+```
+
+
+### access route segment
+```tsx
+import { usePathname } from 'next/navigation'
+const pathName = usePathname()
+const isActive = pathName.startsWith(url)
+```
+
+
+### redirect
+#### client component
+```tsx
+import { useRouter } from 'next/navigation'
+
+const router = useRouter()
+
+const handleClick = () => {
   router.push('/route')
   router.replace('/route')
-        └── routes.ts
-    ├── routes.ts
-- route.ts
-│       └── route.ts
-## routing
-# Routing
-run on server to handle form submission and data mutation <br/>
-runs when path not exist <br/>
- { searchParams: [key: string]: string | string[] | undefined }) {}
-#### server
-### server actions
-- server actions
-# Server actions
-server actions can be invoked in:
+  router.back()
+  router.forward()
+}
+```
+
 #### server component | router handler | server action
-# server components
-- server components
-- server side rendering         (SSR)
-# setup
-should be in root '/app/middleware.ts'
-`Since Server Components render on the server, you don't need to call a Route Handler from a Server Component to fetch data. Instead, you can fetch the data directly inside the Server Component.`
-- [...slug]
-- [[...slug]]
-│   └── [[...slug]]
-      source: '/((?!api|_next/static|_next/image|favicon.ico).*)',
-## special
-  src=''
-    (state, newUser: User) => [...state, newUser],
-state preserved on navigtion
-// static
-- static site generation        (SSG)
-    status: 200,
-    status: 201,
-## streaming
-// string | string[] | regex
-      </Suspense>
-    </Suspense>
-      <Suspense fallback={<Loading/>}>
-    <Suspense fallback={<Loading />}>
-    tags: ['collection'],   // data cache
-## template
-  </Template>
-  <Template>
-    template: '%s | my-site',   // on child metadata.title will replace %s
-- template.tsx
-│   ├── template.tsx
-The lowest time will be used for all requests
-  - third party API
-  - third party API
-this enables parts of the page to be displayed sooner, without waiting for all the data to load before any UI can be rendered
-this ensure to not render a route that should not be parallel rendered
-- time-based
-  title: '',
-  title: {
-  title: `${params.id}`,
-#### to not cache a component
-to revalidate all fetch requests in a route segment, you can use the
+"redirect"
+- used outside try catch
+- can be called in Client Components during the rendering process
+
+```tsx
+import { redirect } from 'next/navigation'
+import { revalidatePath } from 'next/cache'
+
+revalidatePath('/posts') // Update cached posts
+redirect('/route')
+```
+
+"permanentRedirect"
+- used after a mutation that changes an entity's canonical URL such as updating a user's profile URL after they change their username
+
+```tsx
+'use server'
+ 
+import { permanentRedirect } from 'next/navigation'
+import { revalidateTag } from 'next/cache'
+ 
+export const updateUsername = async (username: string) {
   try { /* update database */ } catch {}
+ 
+  revalidateTag('username') // Update all references to the username
+  permanentRedirect(`/profile/${username}`)
+}
+```
+
+#### middleware
+intercept requests to specific routes <br/>
+should be in root '/app/middleware.ts'
+
 ```tsx
-```tsx
-```tsx
-```tsx
-```tsx
-```tsx
-```tsx
-```tsx
-```tsx
-```tsx
-```tsx
-```tsx
-```tsx
-```tsx
-```tsx
-```tsx
-```tsx
-```tsx
-```tsx
-```tsx
-```tsx
-```tsx
-```tsx
-```tsx
-```tsx
-```tsx
-```tsx
-```tsx
-```tsx
-```tsx
-```tsx
-```tsx
-```tsx
-```tsx
-```tsx
-```tsx
-```tsx
-```tsx
-```tsx
+import { type NextRequest, NextResponse } from 'next/server'
+import { isAuthenticated } from '@lib/auth'
+
+export function middleware(request: NextRequest) {
+  if (request.nextUrl.pathname.startsWith('/dashboard'))
+    return NextResponse.rewrite(new URL('/dashboard/user', request.url))
+
+  if (isAuthenticated)
+    return NextResponse.next()
+  
+  const headers = new Headers(request.headers)
+  headers.set('header-name', 'value')
+
+  if (request.cookies.has('cookieName'))
+    request.cookies.delete('cookieName')
+
+  const response = NextResponse.next()
+  response.headers.set('x-hello-from-middleware2', 'hello')
+  response.cookies.set('anotherCookie', 'value')
+  return response
+}
+
+// string | string[] | regex
+export const config = {
+  matcher: [
+    '/about',
+    '/dashboard/:path', // dashboard/a
+    '/dashboard/:path*', // dashboard/a/b/c
+
+    /*
+      * Match all request paths except for the ones starting with:
+      * - api (API routes)
+      * - _next/static (static files)
+      * - _next/image (image optimization files)
+      * - favicon.ico (favicon file)
+      * ignore pre-fetches
+    */
+    {
+      source: '/((?!api|_next/static|_next/image|favicon.ico).*)',
+      missing: [
         { type: 'header', key: 'next-router-prefetch' },
         { type: 'header', key: 'purpose', value: 'prefetch' },
-      </ul>
-      <ul>
-  - URL
-  - URL
-'use client'
-'use client'
-'use client'
-'use client' to use hooks or interactivity
-- used after a mutation that changes an entity's canonical URL such as updating a user's profile URL after they change their username
-- used outside try catch
-- useEffect
-│   └── user
-    └── @users
-    users,
-  @users
-  @users
-'user server' runs the function on the server removing the boundary between client and server
-    'use server'
-  'use server'
-  'use server'
-'use server'
-'use server'
-'use server'
-'use server' // mark as server action
-  - webhooks (stripe)
-### wehre to use zod
-when navigating to another route render interceport component <br/>
-  width={}
-│   └── (with-layout)
-wrap blocking components that fetch data in <Suspense /> instead of lading the whole page
-`wrong email or password` <br />
+      ],
+    },
+  ],
+}
+
+```
+
+### parallel routes
+instead of importing components from its folder <br/>
 you can import users, notifications in layout.tsx as props
-you can render server component inside client component by passing it as {children} from server component
-you can revalidate data or redirect (both outside try catch)
+
+- dashboard
+  - page.tsx
+  - layout.tsx
+  @users
+    - page.tsx
+  @notifications
+    - page.tsx
+
+
+in routing inside notifications /dashboard/archive <br/>
 you should define default page for dashboard (children) and users <br/>
+this ensure to not render a route that should not be parallel rendered
+
+- dashboard
+  - layout.tsx
+  - page.tsx
+  - default.tsx
+  @users
+    - page.tsx
+    - default.tsx
+  @notifications
+    - page.tsx
+    - archive
+      - page.tsx
+
+
+### intercepting routes
+when navigating to another route render interceport component <br/>
+on refresh render the original component
+
+common usage: modals
+- login form
+- image slider
+
+```
+app/f1
+├── f2
+│   ├── f3
+│   │   └── (...f1)
+│   └── (..f4)
+├── (.)f2
+└── f4
+```
+
+(.) for neighbour routes  f1 -> f2 and (.)f2
+```
+f1
+├── f2
+└── (.)f2
+```
+
+(..) for up level routes  f1/f2/../f4
+```
+f1
+├── f2
+│   └── (..f4)
+└── f4
+```
+
+(...) for any nested level to root '/any'
+```
+f1
+└── f2
+    └── f3
+        └── (...f1)
+```
+
+## route handlers (backend)
+```
+app
+└── api
+    ├── routes.ts
+    └── [id]
+        └── routes.ts
+```
+
+export function matching http verb (GET, POST...)
+
+```tsx
+import { type NextRequest, NextResponse } from 'next/server'
+import { headers, cookies } from 'next/headers'
+
+export async function GET(request: NextRequest) {
+  const { searchParams } = request.nextUrl
+  const query = searchParams.get('q') || ''
+  const filteredUsers = data.users.filter((user) => user.name.includes(query))
+
+  const headerList = headers() // read only
+  // or  new Headers(request.headers)
+  const token = headerList.get('Authorization')
+
+  const cookieList = cookies()
+  const theme = cookieList.get('theme')
+  // or  request.cookies.get()
+  cookieList.set('theme', 'dark', { httpOnly: true, secure: true })
+
+  return Response.json({ users: filteredUsers, token, theme })
+}
+
+export async function POST(request: NextRequest) {
+  const { name } = await request.json()
+  const newUser = { id: data.users.length + 1, name }
+  data.users.push(newUser)
+
+  return NextResponse.json(newUser, { status: 200 })
+
+  /* or
+  return new Response(JSON.stringify(newUser), {
+    status: 201,
+    headers: { 'Content-Type': 'application/json' },
+  }) */
+}
+
+
+export async function GET(
+  _request: NextRequest,
+  context: { params: { id: string } },
+) {
+  const id = +context.params.id
+  if (id > data.users.length) redirect('/api/users')
+  const user = data.users.filter((user) => user.id === id)
+  return Response.json(user)
+}
+
+export async function PATCH(
+  request: NextRequest,
+  context: { params: { id: string } },
+) {
+  const id = +context.params.id
+  const { name } = await request.json()
+  const index = data.users.findIndex((user) => id === user.id)
+  const modifiedUser = { id, name }
+  data.users[index] = modifiedUser
+  return Response.json(modifiedUser)
+}
+
+export async function DELETE(
+  _request: NextRequest,
+  context: { params: { id: string } },
+) {
+  const id = +context.params.id
+  const index = data.users.findIndex((user) => id === user.id)
+  const [deletedUser] = data.users.splice(index, 1)
+  return Response.json(deletedUser)
+}
+```
+
+
+## cahce
+client side cache is 5 minute <br/>
+on build all responses are cached <br/>
+GET methods with Response object are cached <br/>
+problem: random - date
+
+#### not cached:
+- Request object with GET   (eg. used searchParams)
+- other methods
+- dynamic functions  cookies() & headers()
+
+#### to not cache a component
+```tsx
+export const dynamic = 'force-dynamic' // default 'auto'
+```
+
+#### reavalidate (fetch) each minues
+response stored in data cache on server
+
+```tsx
+// or
+export const revalidate = 60
+
+export async function Component() {
+  const res = await fetch(url, { next: { revalidate: 60 }})
+}
+```
+
+#### CORS
+
+```tsx
+async function GET(request: Request) {
+  return new Response('Hello, Next.js!', {
+    status: 200,
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+      'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+    },
+  })
+}
+```
+
+#### config
+```tsx
+export const dynamic = 'auto'
+export const dynamicParams = true
+export const revalidate = false
+export const fetchCache = 'auto'
+export const runtime = 'nodejs'
+export const preferredRegion = 'auto'
+```# Data Fetching
+
+data ca be fetched on client or server
+
+
+## methods
+- static site generation        (SSG)
+- incremental site regeneration (ISR)
+- server side rendering         (SSR)
+- client side rendering         (CSR)
+
+
+### fetch on server
+```tsx
+const Component = async () => {
+  const respopnse = await fetch('/api/products')
+  if (!response.ok) throw new Error('failed to load data')
+  const data = await response.json()
+
+  return <div />
+}
+```
+
+#### extended fetch
+```tsx
+fetch(url, {
+  cache: 'no-store',
+  next: {
+    revalidate: 3600,       // if 0 then no cache
+    tags: ['collection'],   // data cache
+  },
+})
+```
+
+#### revalidate data
+means updating the cache, ways:
+- time-based
+  auto revalidate, for data that changes infrequently
+```tsx
+fetch(url, { next: { revalidate: 3600 }})
+```
+
+to revalidate all fetch requests in a route segment, you can use the
+```tsx
+// page.tsx | layout.tsx
+export const revalidate = 3600
+```
+
+for statically rendered routes <br/>
+If you have multiple fetch requests with different revalidation frequency <br/>
+The lowest time will be used for all requests
+
+for dynamically rendered routes <br/>
+each fetch request will be revalidated independently
+
+
+- on-demand
+  manually revalidate after eg. form submission <br/>
+  can use a tag-based or path-based approach to revalidate groups of data at once.
+
+can be done in 'server actions' or 'route handlers'
+path `revalidatePath`
+cache tag `revalidateTag`
+
+```tsx
+async function ServerComponent() {
+  const res = await fetch(url, { next: { tags: ['collection'] } })
+  const data = await res.json()
+  return <div />
+}
+```
+
+```tsx
+'use server'
+ 
+import { revalidateTag } from 'next/cache'
+ 
+export default async function serverAction() {
+  revalidateTag('collection')
+}
+```
+
+#### data caching
+data returned from fetch() is cached in 'data cache' on server <br />
+data can be fetched at build time or request time
+
+```tsx
+fetch(url, { cache: 'force-cache' /* default */})
+```
+
+fetch requests that use the POST method are automatically cached. Unless it's inside Route Handler that uses the POST method.
+
+##### cache requests of third party libs
+```tsx
+import { cache } from 'react'
+
+const getData = cache(async () => {
+  const res = await axios.get(url);
+  const data = await res.json();
+  return data;
+})
+
+// on page
+export const revalidate = 3600;
+
+export default async function Page() {
+  const someData = await getData();
+}
+```
+
+`Since Server Components render on the server, you don't need to call a Route Handler from a Server Component to fetch data. Instead, you can fetch the data directly inside the Server Component.`
+
+
+
+# Server actions
+run on server to handle form submission and data mutation <br/>
+you can revalidate data or redirect (both outside try catch)
+
+server actions can be invoked in:
+- `<form />`
+- `<button />`
+- `<input type='submit' />`
+- `<input type='image' />`
+- event handlers eg. onClick, onChange
+- onKeyDown
+- useEffect
+
+```tsx
+async function submitForm(formData) {
+  'use server'
+  //...
+}
+
+const function ServerComponent() {
+  return <form action={submitForm}></form>
+}
+```
+
+```tsx
+// @/actions/submitForm.ts
+'use server' // mark as server action
+export async function submitForm(formData) {}
+
+
+// @/app/page.tsx
+
+import { submitForm } from '@/actions/submitForm'
+const function ClientComponent() {
+  return <form action={submitForm}></form>
+}
+```
+
+### pass extra args
+```tsx
+async function serverActon(userId, formData) {
+  'use server'
+}
+
+export default function ServerComponent({ userId }) {
+  const serverActionWithId = serverAction.bind(null, userId) // js method
+  return <form action={serverActionWithId}></form>
+}
+```
+
+### pending state
+```tsx
+import { useFormStatus } from 'react-dom'
+
+function Component() {
+  const { pending } = useFormStatus()
+  return <button type='submit' aria-disabled={pending}>submit</button>
+}
+```
+
+### error message
+for simple form like login <br />
+`wrong email or password` <br />
+only one message shown unlike register
+
+```tsx
+'use server'
+ 
+export async function createUser(prevState: any, formData: FormData) {
+  // ...
+  return { message: 'please enter a valid email' }
+}
+```
+
+```tsx
+'use client'
+import { useFormState } from 'react-dom'
+import { createUser } from '@/app/actions'
+ 
+const initialState = { message: '' }
+
+export function Signup() {
+  const [state, formAction] = useFormState(createUser, initialState)
+
+  return <form action={formAction}></form>
+}
+```
+
+### optimistic update
+```tsx
+'use client'
+
+import { useOptimistic } from 'react'
+import { addUser } from '@/actions/adduser' 
+
+function Component({ users }) {
+  const [optimisticUsers, addOptimisticUser] = useOptimistic(
+    users,
+    (state, newUser: User) => [...state, newUser],
+  )
+
+  const clientAction = (formData: FormData) => {
+    //...
+    addOptimisticUser({ id: Math.random(), name: formData.get('name') })
+  }
+
+  return (
+    <>
+      <form action={clientAction}></form>
+      <ul>
+        {optimisticUsers.map(user => <li>{user.name}</li>)}
+      </ul>
+    </>
+  )
+}
+```
+
+### programatic submission
+on key down `ctrl + enter`
+
+```tsx
+'use client'
+ 
+export function Entry() {
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
+    if (e.ctrlKey && e.key === 'Enter') {
+      e.preventDefault()
+      e.currentTarget.form?.requestSubmit()
+    }
+  }
+ 
+  return <textarea onKeyDown={handleKeyDown} />
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# concepts
+- API route handlers
+- server actions
+- server components
+
+
+# notes
+'use client' to use hooks or interactivity
+by default everything in /app is server components
+becomse client component when 'use client' or imported in client component
+it is about import tree not render tree
+you can render server component inside client component by passing it as {children} from server component
+
+
+# server components
+by default all components in /app are server components
+it becomes client compoenent when 'use client' or import from client component
+
+pros:
+  - fetch in component directly close to the data source
+  - keep large dependencies on the server
+
+'user server' runs the function on the server removing the boundary between client and server
+
+```tsx
+export function Component({ searchParams }:
+ { searchParams: [key: string]: string | string[] | undefined }) {}
+```
+
+### server actions
+```tsx
+import { revalidatePath } from 'next/cache'
+
+function Form() {
+  const addUser = async (formData: FormData) => {
+    'use server'
+
+    const name = formData.get('name')
+
+    await fetch('http://localhost:3000/api/users', {
+      body: JSON.stringify({ name }),
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    })
+
+    revalidatePath('/')
+  }
+
+  return (
+    <form action={addUser}>
+      <input type='text' name='name' id='name' placeholder='name' />
+      <button>submit</button>
+    </form>
+  )
+}
+
+export default Form
+```
+
+wrap blocking components that fetch data in <Suspense /> instead of lading the whole page
+
+
+
+## image
+- auto compress image
+- responsive images
+- prevent layout shift (CLS)
+
+```tsx
+import Image from 'next/image'
+<Image
+  src=''
+  alt=''
+  width={}
+  height={}
+>
+```
+
+
+## environment variables
+- .env (public)
+  NEXT_PUBLIC_API_URL (shipped to the browser)
+
+- .env.local (private)
+  MY_SECRET (kept on server - no client components)
+
+```tsx
+process.env.NEXT_PUBLIC_API_URL
+process.env.MY_SECRET
+```
 # zod
+
+```tsx
+import { z } from 'zod'
+
+const xSchema = z.object({
+  email: z.string().email(),
+  name: z.string().min(1, 'message').max(10).optional(),
+  id: z.coerce.number().int().positive(),
+  color: z.enum(['red', 'green', 'blue'])
+})
+```
+
+### wehre to use zod
+#### client
+  - API
+  - URL
+  - form data
+  - localStorage
+  - third party API
+
+#### server
+  - URL
+  - third party API
+  - environment variables
+  - webhooks (stripe)
+  - file system
+
+  ORM
+    - prisma
+    - mongoose
+
+# notes
+libraries still use with next.js:
+  - redux-toolkit
+  - react-query
+  - react-hook-form
+
+libraries stop use with next.js:
+  - react-router-dom
