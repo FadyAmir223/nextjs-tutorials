@@ -191,30 +191,6 @@ export const generateMetadata = async ({ params }: ProductProps): Promise<Metada
 ```
 
 
-## streaming
-break down the page's HTML into smaller chunks and send chunks from server to client <br/>
-this enables parts of the page to be displayed sooner, without waiting for all the data to load before any UI can be rendered
-
-```tsx
-const App = async () => (
-  <>
-    <h1>products</h1>
-    <Suspense fallback={<Loading />}>
-      <ListProducts />
-    </Suspense>
-  </>
-)
-
-
-const ListProducts = () => {
-  const response = await fetch('/api/products')
-  const { products } = await response.json()
-
-  return <div />
-}
-```
-
-
 ## navigation
 ```tsx
 import Link from 'next/link'
@@ -782,58 +758,85 @@ export function Entry() {
 ```
 
 
+## streaming
+break down the page's HTML into smaller chunks and send chunks from server to client <br/>
+this enables parts of the page to be displayed sooner, without waiting for all the data to load before any UI can be rendered <br />
+data can be blocked if fetch request depend on another fetch result
+
+### blocking
+```tsx
+const Page = async ({ params }) => {
+  const artist = await getArtist(params.artistName)
+
+  <>
+    <h1>products</h1>
+    <Suspense fallback={<Loading />}>
+      <Playlists artistId={artist.id} />
+    </Suspense>
+  </>
+}
+
+const Playlists = async ({ artistId }) => {
+  const playlists = await getPlaylist(artistId)
+
+  return <div />
+}
+```
+
+### parallel fetch
+prevents waterfalls
+
+```tsx
+const getArtist = () => {}
+const getAlbums = () => {}
+
+const Page = async ({ params: { artistName } }) => {
+  const artistPromise = getArtist(artistName)
+  const albumsPromise = getAlbums(artistName)
+  const [artist, albums] = await Promise.all([artistPromise, albumsPromise])
+
+  <>
+    <h1>{artistName}</h1>
+    <Albums albums={albums} />
+  </>
+}
+
+const Albums = async ({ albums }) => {
+  return <div />
+}
+```
+
+if you want to use same user object in multiple components you don't need to pass it as props, just fetch it because fetch is memoized
 
 
+### pre-loading
+to further optimize parallel fetch and not passing promise result as props
+create function that evaluate the function and return undefined
 
+```tsx
+// albums/page.tsx
+export const preload = (artistName) => {
+  void getAlbums(artistName)
+}
 
+export default const Albums = async ({ artistName }) => {
+  const albums = await getAlbums(artistName)
+  return <div />
+}
+```
 
+```tsx
+// [artistName]/page.tsx
+export const Page = async ({ params: { artistName } }) => {
+  prelaod(artistName)
+  const artist = await getArtist(artistName)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  <>
+    <h1>{artistName}</h1>
+    <Albums albums={albums} />
+  </>
+}
+```
 # concepts
 - API route handlers
 - server actions
