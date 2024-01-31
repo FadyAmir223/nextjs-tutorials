@@ -1,4 +1,4 @@
-import { type NextRequest, NextResponse } from 'next/server'
+import { type NextRequest, NextResponse, userAgent } from 'next/server'
 
 export async function middleware(request: NextRequest) {
   if (request.nextUrl.pathname === '/_public')
@@ -11,5 +11,5 @@ export async function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/docs', '/_public'],
+  matcher: ['/', '/docs', '/_public'],
 }

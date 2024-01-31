@@ -9,7 +9,7 @@ const DefaultLogin = () => {
 
   useEffect(() => {
     if (!isLogin) router.push('/dashboard')
-  }, [])
+  }, [router])
 
   return <></>
 }

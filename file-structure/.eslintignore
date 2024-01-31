@@ -1,0 +1,10 @@
+**/node_modules/*
+dist
+coverage
+**/.next/*
+*.json
+*.lock
+*.css
+**/out/*
+next-env.d.ts
+# next.config.js

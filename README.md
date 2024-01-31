@@ -468,11 +468,6 @@ problem: random - date
 - other methods
 - dynamic functions  cookies() & headers()
 
-#### to not cache a component
-```tsx
-export const dynamic = 'force-dynamic' // default 'auto'
-```
-
 #### reavalidate (fetch) each minues
 response stored in data cache on server
 
@@ -501,14 +496,25 @@ async function GET(request: Request) {
 ```
 
 #### config
+need be statically analyzable eg. 60 * 10 not valid
+
 ```tsx
-export const dynamic = 'auto'
-export const dynamicParams = true
-export const revalidate = false
+// change the dynamic behavior of a layout or page to fully static or fully dynamic
+export const dynamic = 'auto' // 'force-dynamic' | 'error' | 'force-static'
+// note: `app` directory favors granular caching control at the fetch request level over the binary all-or-nothing model
+
+// dynamic segments not included in generateStaticParams are:
+// true: generated on demand
+// false: return 404
+export const dynamicParams = true // boolean
+
+// set revalidation time for cached fetch resonpses
+export const revalidate = false // 0 | number
+
+// 'default-cache' | 'only-cache' | 'force-cache' | 'force-no-store' | 'default-no-store' | 'only-no-store'
 export const fetchCache = 'auto'
-export const runtime = 'nodejs'
-export const preferredRegion = 'auto'
-```# Data Fetching
+```
+# Data Fetching
 
 data ca be fetched on client or server
 
@@ -1435,104 +1441,95 @@ const ClientComponent = dynamic(() =>
   import('../components/hello').then((module) => module.Hello)
 )
 ```
-# Authentication
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# Config
+
+## lint
+### eslint
+```sh
+npm i -D \
+  @typescript-eslint/parser \
+  @typescript-eslint/eslint-plugin \
+  @next/eslint-plugin-next
+```
+
+```json
+// tsconfig.json
+{
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js"],
+  "exclude": ["node_modules", ".next", ".vercel", "out"]
+}
+```
+
+### prettier
+eslint and prettier can conflict so import this to work together
+```sh
+npm i -D eslint-config-prettier eslint-plugin-prettier
+```
+
+```json
+// .prettierrc.json
+{
+  "semi": false,
+  "trailingComma": "es5",
+  "singleQuote": true,
+  "tabWidth": 2,
+  "useTabs": false
+}
+```
+
+```json
+// .eslintrc.json
+{
+  "extends": [
+    // ...
+    "prettier" // last
+  ],
+  "plugins": [
+    "prettier" // eslint-plugin-prettier
+  ],
+  "rules": {
+    "prettier/prettier": "warn"
+  }
+}
+```
+
+### lint staged
+```js
+// .lintstagedrc.js
+
+const path = require('path')
+ 
+const buildEslintCommand = (filenames) =>
+  `next lint --fix --file ${filenames
+    .map((f) => path.relative(process.cwd(), f))
+    .join(' --file ')}`
+ 
+module.exports = {
+  '*.{js,jsx,ts,tsx}': [buildEslintCommand],
+}
+```
+
+## environment variables
+`.env` `.env.development` `.env.production` are global. prefix with NEXT_PUBLIC_ to use on client side <br />
+`.env.$(NODE_ENV).local` are ignored <br />
+when loading `.env.test` none else is loaded
+
+```tsx
+// can be used in a global testing setup file
+import { loadEnvConfig } from '@next/env'
+
+export default async () => {
+  const projectDir = process.cwd()
+  loadEnvConfig(projectDir)
+}
+```
+
+### load order
+- process.env
+- .env.$(NODE_ENV).local
+- .env.local (Not checked when NODE_ENV is test.)
+- .env.$(NODE_ENV)
+- .env
 # bundle analyzer
 ```sh
 npm i @next/bundle-analyzer
@@ -1558,6 +1555,22 @@ export function WebVitals() {
     console.log(metric)
   })
 }
+```
+
+# Compiler
+
+```js
+// next.config.js
+
+compiler: {
+  // remove React Properties (for test)
+  reactRemoveProperties: { properties: ['^data-custom$'] },
+
+  // remove console.* output except console.error:
+  removeConsole: {
+    exclude: ['error'],
+  },
+},
 ```
 # zod
 
