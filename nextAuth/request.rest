@@ -1,0 +1,27 @@
+@url = http://localhost:3000
+
+### get users
+GET {{url}}/api/users
+  ?q=a
+Authorization: bearer 123
+
+
+### add user
+POST {{url}}/api/users
+
+{
+  "name": "levi"
+}
+
+### get user by id
+GET {{url}}/api/users/2
+
+### modify user
+PATCH {{url}}/api/users/2
+
+{
+  "name": "eren"
+}
+
+### remove user
+DELETE {{url}}/api/users/2
